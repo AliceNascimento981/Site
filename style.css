@@ -963,3 +963,163 @@ img#motorImage {
         font-size: 2em;
     }
 }
+
+
+
+
+
+/*==================== MOTOR ANIMADO CORRIGIDO ====================*/
+
+#motor {
+    padding: 50px 0;
+    /* Adiciona padding vertical */
+    text-align: center;
+}
+
+#motorImage {
+    /* Diminuímos o tamanho máximo para que caiba na maioria dos monitores */
+    max-width: 900px;
+    width: 90%;
+    /* Ocupa 90% da largura do container */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+    /* Centraliza a imagem na horizontal */
+    display: block;
+    margin: 0 auto;
+}
+
+#text-mot {
+    text-align: center;
+    font-size: 2.5em;
+    /* Reduz o tamanho da fonte para melhor leitura */
+    margin-bottom: 30px;
+    /* Espaço para o título */
+}
+
+/* Responsividade do motor para CELULAR */
+@media (max-width: 500px) {
+    #motorImage {
+        width: 95%;
+        /* Ocupa ainda mais espaço no celular para ser visível */
+        /* max-width continua funcionando para não ficar gigante em telas maiores que 500px mas menores que 768px */
+    }
+
+    #text-mot {
+        font-size: 1.8em;
+        /* Ajuste para caber no celular */
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ============================================== */
+/* === ESTILOS PARA A NOVA SEÇÃO DE CAROUSEL (AJUSTADA) === */
+/* ============================================== */
+
+/* Container principal do carousel */
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* O Track: Contém todos os slides e será movido pelo JS */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* REMOVEMOS A LARGURA FIXA DE 145% QUE CAUSAVA PROBLEMAS */
+    /* Deixamos a largura total ser determinada pelos slides */
+}
+
+/* Cada Slide individual */
+.carousel-slide {
+    min-width: 100%;
+    /* GARANTE que cada slide ocupe 100% da largura visível */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: #000;
+}
+
+/* Imagem do carro no DESKTOP */
+.car-image {
+    width: 65%;
+    /* Aumentamos para 65% para dar mais foco à imagem */
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+/* Conteúdo informativo do slide no DESKTOP */
+.slide-info {
+    width: 35%;
+    /* O restante */
+    padding: 50px;
+}
+
+/* === Botões de Navegação (← e →) === */
+.carousel-nav {
+    /* ... (Mantenha o resto dos estilos de navegação) ... */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 20;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+/* ============================================== */
+/* === MEDIA QUERIES (RESPONSIVIDADE) CORRIGIDA === */
+/* ============================================== */
+@media (max-width: 768px) {
+
+    /* Mudar layout do slide para empilhar no mobile */
+    .carousel-slide {
+        flex-direction: column;
+        /* IMAGEM VAI PARA CIMA, INFO VAI PARA BAIXO */
+    }
+
+    .car-image,
+    .slide-info {
+        width: 100%;
+        /* Ambos ocupam a largura total no mobile */
+        padding: 0;
+    }
+
+    .car-image {
+        max-height: 250px;
+        /* Altura menor para o celular */
+        object-fit: cover;
+    }
+
+    .slide-info {
+        padding: 30px 20px;
+        /* Adiciona padding vertical e lateral menor */
+        text-align: center;
+    }
+
+    .slide-info h3 {
+        font-size: 2em;
+        /* Reduz o tamanho do título */
+    }
+
+    .slide-info p {
+        font-size: 1em;
+        /* Reduz o tamanho do parágrafo */
+    }
+
+    .carousel-nav {
+        font-size: 1.5em;
+        padding: 10px 5px;
+    }
+}
