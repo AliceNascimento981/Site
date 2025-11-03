@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- 🔧 Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Super Máquina - O Luxo ao Extremo</title>
+
+    <!-- 🎨 Link para o arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 🎬 Seção Hero com vídeo de fundo e navegação -->
+    <header class="hero">
+        <!-- 🎥 Vídeo de fundo da seção -->
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="./GSDWDN_Hero_Coupe__Desktop_48A990.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+        </video>
+
+        <!-- 🧭 Barra de navegação principal -->
+        <nav class="navbar">
+            <div class="logo">Ferrari</div>
+            <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+            <ul id="menu-principal">
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="#features">Vantagens</a></li>
+                <li><a href="#historia">Notícias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- ✨ Conteúdo principal da seção hero -->
+        <div class="hero-content">
+            <h1>A Pura Arte da Velocidade</h1>
+            <p>Descubra a máquina que redefine os limites da engenharia e do design.</p>
+            <a href="#modelos" class="cta-button">EXPLORE AGORA</a>
+        </div>
+    </header>
+
+    <!-- 🚗 Tela de abertura (Splash Screen) -->
+    <div class="splash">
+        <img src="./1234.jpg" alt="Logo Ferrari" class="logo" />
+    </div>
+
+    <!-- 🚘 Seção de modelo em destaque -->
+    <section id="modelos" class="featured-model">
+        <h2>MODELO EM DESTAQUE: O SUPERSONIC</h2>
+        <div class="model-details">
+            <p>Um motor V12 com 800 cavalos de potência, capaz de ir de 0 a 100 km/h em menos de 3 segundos. O
+                <strong>Supersonic</strong> não é apenas um carro; é uma experiência de condução incomparável.
+            </p>
+            <ul>
+                <li>Potência: 800 CV</li>
+                <li>Velocidade Máxima: 340 km/h</li>
+                <li>Design Exclusivo: Fibra de Carbono Total</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 🚘 Seção de carrosel -->
+    <section id="galeria" class="car-carousel-section">
+        <h2 id="tit-lan">LANÇAMENTOS E EXCLUSIVOS</h2>
+
+        <div class="carousel-container">
+            <button class="carousel-nav prev">←</button>
+
+            <div class="carousel-track">
+
+                <div class="carousel-slide">
+                    <div class="slide-info">
+                        <h3>F8 TRIBUTO</h3>
+                        <p>O Tributo definitivo à performance da V8, unindo potência extrema e dirigibilidade impecável.
+                        </p>
+
+                    </div>
+                    <img src="./Tributo.jpeg" alt="Ferrari F8 Tributo" class="car-image">
+                </div>
+
+                <div class="carousel-slide">
+
+                    <div class="slide-info">
+                        <h3>SF90 STRADALE</h3>
+                        <p>O primeiro super carro híbrido plug-in, 1000 CV de potência combinada para redefinir o
+                            futuro.</p>
+
+                    </div>
+                    <img src="./sf9.jpg" alt="Ferrari SF90 Stradale" class="car-image">
+                </div>
+
+                <div class="carousel-slide">
+
+                    <div class="slide-info">
+                        <h3>ROMA</h3>
+                        <p>A elegância da Dolce Vita com a performance moderna. Um coupé 2+ de design minimalista.</p>
+
+                    </div>
+                    <img src="./Roma.jpeg" alt="Ferrari Roma" class="car-image">
+                </div>
+
+            </div>
+
+            <button class="carousel-nav next">→</button>
+        </div>
+    </section>
+
+
+
+
+    <!-- 🚘 Seção de galeria -->
+    <section id="arte-em-detalhes" class="image-gallery-section">
+        <h2>ARTE EM DETALHES</h2>
+        <p class="subtitle-gallery">Uma visão de perto da engenharia e do design exclusivos de Maranello.</p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item" data-src="./interior.jpg"
+                data-caption="Cockpit ergonômico em fibra de carbono.">
+                <img src="./interior.jpg" alt="Interior do Carro">
+                <div class="overlay">Interior Exclusivo</div>
+            </div>
+
+            <div class="gallery-item" data-src="./roda.jpg"
+                data-caption="Roda forjada e freios de cerâmica de alta performance.">
+                <img src="./roda.jpg" alt="Detalhe da Roda">
+                <div class="overlay">Roda Forjada</div>
+            </div>
+
+            <div class="gallery-item" data-src="./motor arte.jpg"
+                data-caption="Motor V12 exposto, o coração da máquina.">
+                <img src="./motor arte.jpg" alt="Motor exposto">
+                <div class="overlay">Motor V12</div>
+            </div>
+
+            <div class="gallery-item" data-src="./led ultra.jpg"
+                data-caption="Design aerodinâmico do farol de LED.">
+                <img src="./led ultra.jpg" alt="Detalhe do Farol">
+                <div class="overlay">Farol de LED</div>
+            </div>
+
+            <div class="gallery-item" data-src="./spoiler.jpg"
+                data-caption="Spoiler traseiro ativo para máxima downforce.">
+                <img src="./spoiler.jpg" alt="Spoiler Traseiro">
+                <div class="overlay">Spoiler Ativo</div>
+            </div>
+
+            <div class="gallery-item" data-src="./emblema.jpg"
+                data-caption="O Cavalo Rampante, símbolo da tradição e vitória.">
+                <img src="./emblema.jpg" alt="Emblema da Ferrari">
+                <div class="overlay">O Emblema</div>
+            </div>
+
+        </div>
+
+        <div id="lightbox" class="lightbox-modal">
+            <span class="close-btn">&times;</span>
+            <button class="lightbox-nav prev-lb">←</button>
+            <img class="lightbox-content" id="lightboxImage" src="" alt="">
+            <button class="lightbox-nav next-lb">→</button>
+            <div id="caption" class="lightbox-caption"></div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+    </section>
+
+
+
+
+
+
+    <!-- 🛠️ Seção de vantagens e diferenciais -->
+    <section id="features" class="features">
+        <h2>O QUE NOS DEFINE</h2>
+        <div class="features-grid">
+            <!-- 💨 Performance -->
+            <div class="feature-item">
+                <span class="icon">🏎️</span>
+                <h3>Performance Inigualável</h3>
+                <p>Motores desenhados para a pista, mas construídos para a estrada. Aceleração e precisão sem paralelos.
+                </p>
+            </div>
+            <!-- 🎨 Design -->
+            <div class="feature-item">
+                <span class="icon">✨</span>
+                <h3>Design Artesanal</h3>
+                <p>Cada linha, cada curva é esculpida à mão por mestres italianos, garantindo exclusividade e beleza.
+                </p>
+            </div>
+            <!-- 🏁 Legado -->
+            <div class="feature-item">
+                <span class="icon">🛡️</span>
+                <h3>Tradição e Legado</h3>
+                <p>Mais de 70 anos de história no automobilismo, levando o espírito de vitória a cada novo veículo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📰 Seção de notícias e blog -->
+    <section id="historia" class="news-blog">
+        <h2>ÚLTIMAS NOTÍCIAS DA PISTA</h2>
+        <div class="news-container">
+            <!-- 🏆 Notícia 1 -->
+            <article class="news-item">
+                <h3>Vitória Histórica no Grand Prix</h3>
+                <p>Nosso piloto garantiu o primeiro lugar na corrida mais desafiadora da temporada. Leia os detalhes da
+                    estratégia vencedora!</p>
+
+            </article>
+            <!-- 🚀 Notícia 2 -->
+            <article class="news-item">
+                <h3>Apresentação do Conceito Futuro</h3>
+                <p>Um olhar exclusivo sobre o protótipo que define a próxima década de design automotivo. Veja as fotos
+                    e vídeos.</p>
+
+            </article>
+            <!-- 🧪 Notícia 3 -->
+            <article class="news-item">
+                <h3>Entrevista com o Engenheiro Chefe</h3>
+                <p>Como a fibra de carbono revolucionária foi incorporada no nosso novo chassi. Os segredos da inovação.
+                </p>
+
+            </article>
+        </div>
+    </section>
+
+
+
+
+    <!-- Motor Ferrari com som ao clicar -->
+    <section id="motor">
+        <h2 id="text-mot">Clique no motor para ouvir o som!</h2>
+        <img src="./gemini motor.png" class="img-animada" alt="Motor Ferrari" id="motorImage">
+        <audio id="motorSound" src="./SOM ACELERAÇÃO FERRARI 458 (Gil França Efeitos e Sons) (2).mp3"></audio>
+    </section>
+
+
+
+    <!-- Formulário -->
+
+    <section id="contato" class="contact-schedule">
+        <h2>AGENDAMENTO EXCLUSIVO</h2>
+        <p class="subtitle">Entre em contato para configurar seu modelo ou agendar um test drive privado.</p>
+
+        <form class="exclusive-form" id="contactForm">
+
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+            </div>
+
+            <div class="form-group">
+                <label for="modelo">Modelo de Interesse</label>
+                <select id="modelo" name="modelo" required>
+                    <option value="" disabled selected>Selecione um Modelo</option>
+                    <option value="supersonic">Supersonic (Destaque)</option>
+                    <option value="f8">F8 Tributo</option>
+                    <option value="sf90">SF90 Stradale</option>
+                    <option value="roma">Roma</option>
+                    <option value="outro">Outro Modelo / Geral</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="mensagem">Detalhes da Consulta</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required
+                    placeholder="Diga-nos o melhor horário para contato ou detalhes específicos do seu interesse."></textarea>
+            </div>
+
+            <button type="submit" class="cta-button submit-button">ENVIAR SOLICITAÇÃO</button>
+
+            <p id="form-message" class="hidden-message">Em breve entraremos em contato para confirmar sua consulta.</p>
+        </form>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+
+
+
+
+    <!-- 📞 Rodapé com informações de contato -->
+    <footer id="contato" class="footer">
+        <p>&copy; 2025 FERRARI EXTREME. Todos os direitos reservados.</p>
+        <p>Entre em contato: (31) 93547-5698 | email@ferrarii.com</p>
+    </footer>
+
+    <!-- 📜 Script JS para interações -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

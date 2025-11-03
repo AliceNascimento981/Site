@@ -1,0 +1,965 @@
+/* Configurações Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    /* Fundo escuro */
+    color: #ffffff;
+    /* Texto claro */
+    line-height: 1.6;
+}
+
+/* NAVEGAÇÃO (NAVBAR) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo semi-transparente */
+    position: absolute;
+    /* Para ficar por cima da imagem de fundo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ff3333;
+    /* Cor de destaque (Vermelho Ferrari) */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ff3333;
+    /* Destaque no hover */
+}
+
+/* SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    /* IMPORTANTE: Aqui você colocaria a sua imagem de fundo */
+    background: url('caminho/para/sua/imagem-de-carro.jpg') no-repeat center center/cover;
+    height: 100vh;
+    /* Altura total da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    /* Adiciona uma camada escura para o texto se destacar */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.cta-button {
+    background-color: #ff3333;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #cc0000;
+}
+
+/* SEÇÃO DE MODELO EM DESTAQUE */
+.featured-model {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.featured-model h2 {
+    font-size: 2.5em;
+    color: #ff3333;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.model-details {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.model-details p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.model-details ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.model-details ul li {
+    background-color: #333;
+    padding: 15px;
+    border-left: 3px solid #ff3333;
+    flex: 1;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* --- SEÇÃO DE VANTAGENS / CARACTERÍSTICAS --- */
+.features {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #312c2c;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    flex: 1;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-top: 5px solid #ff3333;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    /* Efeito sutil ao passar o mouse */
+    background-color: #222222;
+}
+
+.icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    color: #ff3333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #cccccc;
+}
+
+/* --- SEÇÃO DE NOTÍCIAS / BLOG --- */
+.news-blog {
+    padding: 80px 50px;
+    background-color: #111111;
+    text-align: center;
+}
+
+.news-blog h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-item {
+    flex: 1;
+    background-color: #0d0d0d;
+    padding: 25px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.news-item h3 {
+    color: #ff3333;
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+.news-item p {
+    color: #aaaaaa;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.news-item a {
+    color: #ff3333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.news-item a:hover {
+    color: #ffffff;
+}
+
+
+/* RODAPÉ */
+.footer {
+    background-color: #201d1d;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+    color: #888888;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* --- ESTILOS DO MENU MOBILE (JAVASCRIPT DEPENDENTE) --- */
+
+.menu-toggle {
+    display: none;
+    /* Esconde o botão por padrão em telas grandes */
+    background: none;
+    border: none;
+    color: #ff3333;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* MEDIAS QUERY: ESTILOS APLICADOS QUANDO A TELA TEM NO MÁXIMO 768px (Mobile) */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 25px;
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Mostra o botão no mobile */
+    }
+
+    .navbar ul {
+        display: none;
+        /* Esconde o menu por padrão no mobile */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        /* Abaixo do cabeçalho */
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.95);
+        border-top: 1px solid #333;
+    }
+
+    /* O JS ADICIONA ESTA CLASSE PARA MOSTRAR O MENU */
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid #1a1a1a;
+    }
+
+    .navbar ul li a {
+        display: block;
+        margin: 0;
+        padding: 15px 0;
+    }
+
+    /* Ajustes de Fonte para Mobile */
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .featured-model ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .featured-model ul li {
+        margin: 0;
+    }
+
+    .features-grid,
+    .news-container {
+        flex-direction: column;
+    }
+}
+
+/*==================== SPLASH SCREEN ====================*/
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 2s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.splash .logo {
+    width: 150px;
+    animation: zoomIn 1.5s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+/*==================== VIDEO ====================*/
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+
+/*==================== MOTOR ANIMADO ====================*/
+
+#motor {
+    padding: 0;
+}
+
+#motorImage {
+    width: 900px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
+img#motorImage {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+@keyframes tremor {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(2px, -2px);
+    }
+
+    50% {
+        transform: translate(-2px, 2px);
+    }
+
+    75% {
+        transform: translate(2px, 2px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.tremendo {
+    animation: tremor 0.2s linear infinite;
+}
+
+#text-mot {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -110px;
+}
+
+
+
+/* ============================================== */
+/* === ESTILOS PARA A NOVA SEÇÃO DE CAROUSEL === */
+/* ============================================== */
+
+/* Estilização básica da seção */
+.car-carousel-section {
+    background-color: #333333;
+    /* Fundo mais escuro para destaque premium */
+    padding: 100px 0;
+}
+
+#tit-lan {
+    text-align: center;
+}
+
+/* Título de destaque */
+.car-carousel-section h2 {
+    color: #FF0000;
+    /* Vermelho Ferrari */
+    margin-bottom: 50px;
+}
+
+/* Container principal do carousel */
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* CRUCIAL: Esconde os slides que ultrapassam o container */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Sombra para profundidade */
+}
+
+/* O Track: Contém todos os slides e será movido pelo JS */
+.carousel-track {
+    display: flex;
+    /* Coloca todos os slides lado a lado */
+    transition: transform 0.5s ease-in-out;
+    /* Adiciona a animação de deslize */
+    width: 145%;
+}
+
+/* Cada Slide individual */
+.carousel-slide {
+    min-width: 100%;
+    /* Garante que cada slide ocupe 100% da largura do container */
+    flex-shrink: 0;
+    /* Impede que os slides diminuam */
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: #000;
+}
+
+/* Imagem do carro */
+.car-image {
+    width: 50%;
+    /* Imagem ocupando a maior parte no desktop */
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+    /* Limite de altura para melhor visualização */
+}
+
+/* Conteúdo informativo do slide */
+.slide-info {
+    width: 20%;
+    /* Informações ocupando o restante */
+    padding: 50px;
+}
+
+.slide-info h3 {
+    color: #FF0000;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.slide-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Botão de detalhes/especificações */
+.details-button {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.details-button:hover {
+    background-color: #CC0000;
+    transform: scale(1.05);
+}
+
+/* === Botões de Navegação (← e →) === */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    /* Fundo semi-transparente escuro */
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 20;
+    /* Garantir que fique acima do slide */
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.carousel-nav:hover {
+    opacity: 1;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    /* Borda arredondada no lado direito */
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    /* Borda arredondada no lado esquerdo */
+}
+
+/* ============================================== */
+/* === MEDIA QUERIES (RESPONSIVIDADE) === */
+/* ============================================== */
+@media (max-width: 768px) {
+
+    /* Mudar layout do slide para empilhar no mobile */
+    .carousel-slide {
+        flex-direction: column;
+    }
+
+    .car-image,
+    .slide-info {
+        width: 100%;
+        padding: 0;
+        /* Remove padding lateral para mobile */
+    }
+
+    .car-image {
+        max-height: 220px;
+        object-fit: cover;
+    }
+
+    .slide-info {
+        padding: 30px 20px;
+        /* Adiciona padding vertical e lateral menor */
+        text-align: center;
+    }
+
+    .carousel-nav {
+        font-size: 1.5em;
+        padding: 10px 5px;
+    }
+}
+
+
+/* style.css - Adicionar estes estilos */
+
+/* === Seção de Contato/Agendamento === */
+.contact-schedule {
+    background-color: #000;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.contact-schedule h2 {
+    color: #FF0000;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+/* Estilo do Formulário */
+.exclusive-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os campos fiquem lado a lado */
+    gap: 20px;
+    /* Espaço entre os campos */
+    padding: 30px;
+    background-color: #111;
+    border: 1px solid #FF0000;
+    /* Borda sutil de destaque */
+    border-radius: 5px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 10px);
+    /* 50% da largura, subtraindo o gap */
+    text-align: left;
+}
+
+.full-width {
+    flex: 1 1 100%;
+    /* Ocupa 100% da largura (para textarea) */
+}
+
+/* Estilo para Labels */
+.exclusive-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* Estilo para Inputs e Select/Textarea */
+.exclusive-form input,
+.exclusive-form select,
+.exclusive-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.exclusive-form input:focus,
+.exclusive-form select:focus,
+.exclusive-form textarea:focus {
+    border-color: #FF0000;
+    /* Borda vermelha no foco */
+    outline: none;
+}
+
+/* Estilo do botão de Envio */
+.submit-button {
+    /* Reutiliza o estilo do .cta-button, mas com margem ajustada */
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* Estilo para a mensagem de feedback do JS */
+.hidden-message {
+    width: 100%;
+    margin-top: 20px;
+    color: #4CAF50;
+    /* Verde de sucesso */
+    font-weight: bold;
+    display: none;
+    /* Escondido por padrão */
+}
+
+/* Estilo do Rodapé Final */
+.footer-bottom {
+    background-color: #111;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}
+
+/* Responsividade do Formulário */
+@media (max-width: 600px) {
+    .exclusive-form {
+        gap: 15px;
+    }
+
+    .form-group {
+        flex: 1 1 100%;
+        /* Todos os campos ocupam a largura total no mobile */
+    }
+}
+
+/* ============================================== */
+/* === ESTILOS PARA A GALERIA COM LIGHTBOX === */
+/* ============================================== */
+
+.image-gallery-section {
+    padding: 80px 50px;
+    background-color: #1C1C1C;
+    text-align: center;
+}
+
+.image-gallery-section h2 {
+    color: #FF0000;
+}
+
+.subtitle-gallery {
+    font-size: 1.1em;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+/* O Grid de Imagens */
+.gallery-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas no desktop */
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    /* Altura fixa para uniformidade */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Efeito de Overlay ao passar o mouse */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.4);
+    /* Vermelho semi-transparente */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    /* Começa invisível */
+    transition: opacity 0.4s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    /* Zoom sutil */
+}
+
+
+/* === Estilo do Lightbox (Modal) === */
+.lightbox-modal {
+    display: none;
+    /* Oculto por padrão */
+    position: fixed;
+    z-index: 2000;
+    /* Acima de todos os outros elementos */
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    /* Fundo muito escuro */
+}
+
+/* Conteúdo (Imagem) */
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 80vh;
+    /* Limita a altura da imagem para caber na tela */
+    object-fit: contain;
+}
+
+/* Botão de Fechar */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #FF0000;
+}
+
+/* Legenda da Imagem */
+.lightbox-caption {
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Botões de Navegação do Lightbox */
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3em;
+    padding: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.lightbox-nav:hover {
+    opacity: 1;
+    color: #FF0000;
+}
+
+.lightbox-nav.prev-lb {
+    left: 10px;
+}
+
+.lightbox-nav.next-lb {
+    right: 10px;
+}
+
+
+/* Responsividade da Galeria */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colunas no tablet */
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .lightbox-content {
+        width: 95%;
+        /* Aumenta o tamanho da imagem no mobile */
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        /* 1 coluna no celular */
+    }
+
+    .lightbox-nav {
+        font-size: 2em;
+    }
+}
